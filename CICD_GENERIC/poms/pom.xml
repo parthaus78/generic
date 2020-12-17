@@ -4,23 +4,23 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.example.cicd_generic</groupId>
   <artifactId>code.Master</artifactId>
-  <version>7.3.1</version>
+  <version>7.3.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>CICD_GENERIC Codes Master</name>
   <url>http://www.talend.org/</url>
   <modules>
-    <module>code/routines</module>
-    <module>code/beans</module>
     <module>jobs/process/testjob1_0.1</module>
     <module>jobs/process/testjob2_0.1</module>
     <module>jobs/process/testjob3_0.1</module>
+    <module>code/routines</module>
+    <module>code/beans</module>
   </modules>
   <properties>
-    <signer.version>7.3.1</signer.version>
     <talend.project.name>CICD_GENERIC</talend.project.name>
+    <signer.version>7.3.1</signer.version>
     <encoding>UTF-8</encoding>
-    <talend.docker.tag>${project.version}</talend.docker.tag>
     <maven.deploy.skip>true</maven.deploy.skip>
+    <talend.docker.tag>${project.version}</talend.docker.tag>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
